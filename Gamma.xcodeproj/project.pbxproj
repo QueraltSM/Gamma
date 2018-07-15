@@ -12,9 +12,12 @@
 		6255B3EC20F903B2003D2A16 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6255B3EA20F903B2003D2A16 /* Main.storyboard */; };
 		6255B3EE20F903B5003D2A16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6255B3ED20F903B5003D2A16 /* Assets.xcassets */; };
 		6255B3F120F903B5003D2A16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6255B3EF20F903B5003D2A16 /* LaunchScreen.storyboard */; };
+		6255B3F920F9060C003D2A16 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6255B3F820F9060C003D2A16 /* GoogleService-Info.plist */; };
+		D510C58EBC0F6488823900FC /* Pods_Gamma.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473DC766BE1B13D3ACE9207E /* Pods_Gamma.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		473DC766BE1B13D3ACE9207E /* Pods_Gamma.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gamma.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6255B3E320F903B2003D2A16 /* Gamma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gamma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6255B3E620F903B2003D2A16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6255B3E820F903B2003D2A16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		6255B3ED20F903B5003D2A16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6255B3F020F903B5003D2A16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6255B3F220F903B5003D2A16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6255B3F820F9060C003D2A16 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7730954BB2A820FCA1DD5CD1 /* Pods-Gamma.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gamma.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gamma/Pods-Gamma.debug.xcconfig"; sourceTree = "<group>"; };
+		D3402222E321CF0A051E95C6 /* Pods-Gamma.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gamma.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gamma/Pods-Gamma.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D510C58EBC0F6488823900FC /* Pods_Gamma.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43A99829E14CEDC1E5654DB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7730954BB2A820FCA1DD5CD1 /* Pods-Gamma.debug.xcconfig */,
+				D3402222E321CF0A051E95C6 /* Pods-Gamma.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5EA1BEA0E33704E23BBD1194 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				473DC766BE1B13D3ACE9207E /* Pods_Gamma.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6255B3DA20F903B1003D2A16 = {
 			isa = PBXGroup;
 			children = (
 				6255B3E520F903B2003D2A16 /* Gamma */,
 				6255B3E420F903B2003D2A16 /* Products */,
+				43A99829E14CEDC1E5654DB1 /* Pods */,
+				5EA1BEA0E33704E23BBD1194 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +80,7 @@
 		6255B3E520F903B2003D2A16 /* Gamma */ = {
 			isa = PBXGroup;
 			children = (
+				6255B3F820F9060C003D2A16 /* GoogleService-Info.plist */,
 				6255B3E620F903B2003D2A16 /* AppDelegate.swift */,
 				6255B3E820F903B2003D2A16 /* ViewController.swift */,
 				6255B3EA20F903B2003D2A16 /* Main.storyboard */,
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6255B3F520F903B5003D2A16 /* Build configuration list for PBXNativeTarget "Gamma" */;
 			buildPhases = (
+				F1B6F3118D56B2706E97DA69 /* [CP] Check Pods Manifest.lock */,
 				6255B3DF20F903B1003D2A16 /* Sources */,
 				6255B3E020F903B1003D2A16 /* Frameworks */,
 				6255B3E120F903B1003D2A16 /* Resources */,
+				280E3322E708A096FD49DC53 /* [CP] Embed Pods Frameworks */,
+				E3D8DD2F26533EA322CE42B2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,12 +153,69 @@
 			buildActionMask = 2147483647;
 			files = (
 				6255B3F120F903B5003D2A16 /* LaunchScreen.storyboard in Resources */,
+				6255B3F920F9060C003D2A16 /* GoogleService-Info.plist in Resources */,
 				6255B3EE20F903B5003D2A16 /* Assets.xcassets in Resources */,
 				6255B3EC20F903B2003D2A16 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		280E3322E708A096FD49DC53 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Gamma/Pods-Gamma-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gamma/Pods-Gamma-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3D8DD2F26533EA322CE42B2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gamma/Pods-Gamma-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1B6F3118D56B2706E97DA69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gamma-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6255B3DF20F903B1003D2A16 /* Sources */ = {
@@ -278,6 +365,7 @@
 		};
 		6255B3F620F903B5003D2A16 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7730954BB2A820FCA1DD5CD1 /* Pods-Gamma.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +384,7 @@
 		};
 		6255B3F720F903B5003D2A16 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3402222E321CF0A051E95C6 /* Pods-Gamma.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

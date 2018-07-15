@@ -1,0 +1,6 @@
+framework module Pods_Gamma {
+  umbrella header "Pods-Gamma-umbrella.h"
+
+  export *
+  module * { export * }
+}
